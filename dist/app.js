@@ -6,8 +6,8 @@ function toggleNav() {
 // Data
 const data = [
 	{
-		deadline: 3,
-		tugas: "Membuat Tugas Aljabar",
+		deadline: 100,
+		tugas: "Membuat Tugas PBO",
 		deskripsi: "menambahkan pada bagian 4.2 dan 4.3 tambahnakan balbalbalbal....",
 		link: "classroom.com",
 	},

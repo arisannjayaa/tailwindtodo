@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Plan Everything</title>
+		<link rel="stylesheet" href="../dist/output.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+	</head>
+	<body class="bg-[#F9F9FB]">
+		<main class="lg:flex">
+			<section>
+				<nav class="h-[60px] w-full flex bg-white shadow items-center px-5 justify-between lg:hidden">
+					<h1 class="text-[20px] text-[#333333] font-extrabold">
+						Plan
+						<span class="text-[#00827A]">Everything</span>
+					</h1>
+					<button onclick="toggleNav()">
+						<i class="bi bi-list text-[24px]"></i>
+					</button>
+				</nav>
+			</section>
+			<!-- Sidenav -->
+			<section id="sidenav">
+				<nav class="bg-white fixed h-full top-0 left-0 px-10 ml-[-350px] lg:ml-0 transition-all duration-700">
+					<div class="my-5">
+						<h1 class="text-[42px] text-[#333333] font-extrabold">
+							Plan <br />
+							<span class="text-[#00827A]">Everything</span>
+						</h1>
+					</div>
+					<div class="mb-4">
+						<h2 class="text-[32px] text-[#333333] font-semibold">Kegiatan</h2>
+					</div>
+					<ul class="mb-4">
+						<li class="mb-3">
+							<a href="#" class="block bg-[#F0F0F0] text-[16px] text-[#808080] px-3 py-4 rounded-md hover:bg-[#00827A]/20 hover:text-[#00827A] transition-all">Perkuliahan Akuntansi</a>
+						</li>
+						<li class="mb-3">
+							<a href="#" class="block bg-[#F0F0F0] text-[16px] text-[#808080] px-3 py-4 rounded-md hover:bg-[#00827A]/20 hover:text-[#00827A] transition-all">Perkuliahan Matematika</a>
+						</li>
+						<li class="mb-3">
+							<a href="#" class="block bg-[#F0F0F0] text-[16px] text-[#808080] px-3 py-4 rounded-md hover:bg-[#00827A]/20 hover:text-[#00827A] transition-all">Perkuliahan Algoritma</a>
+						</li>
+						<li class="mb-3">
+							<a href="#" class="block bg-[#F0F0F0] text-[16px] text-[#808080] px-3 py-4 rounded-md hover:bg-[#00827A]/20 hover:text-[#00827A] transition-all">Perkuliahan Otomasi</a>
+						</li>
+					</ul>
+					<a href="./" class="flex items-center justify-center hover:text-white hover:bg-[#00827A] px-3 py-3 rounded transition-all cursor-pointer">
+						<i class="bi bi-plus text-[24px]"></i>
+						<span class="text-[#333333">Tambah Kegiatan</span>
+					</a>
+				</nav>
+			</section>
+			<!-- content -->
+			<section id="content" class="lg:ml-[300px] ml-0 lg:px-10 px-5 w-full">
+				<div class="flex items-center lg:mt-[100px] mt-[50px] lg:mb-[80px] mb-[30px]">
+					<a href="../index.html" class="flex justify-center items-center w-[30px] h-[30px] border-[3px] border-[#00827A]/20 rounded-full">
+						<i class="bi bi-arrow-left-short text-[30px] text-[#00827A]"></i>
+					</a>
+					<span class="lg:text-[20px] text-[16px] ml-3">Detail Tugas</span>
+				</div>
+				<!-- Card Tugas -->
+				<div class="grid grid-cols-1 gap-10">
+					<div class="card bg-white p-4 mb-4 rounded-md shadow">
+						<div class="card-header flex items-center justify-between">
+							<div class="card-header-reminder">
+								<i class="bi bi-clock text-red-600 text-[16px]"></i>
+								<span class="ml-4 text-[14px] text-[#808080]">Deadline: 2 hari</span>
+							</div>
+						</div>
+						<div class="card-title mb-6">
+							<h4 class="text-[20px] font-semibold text-[#00827A]">Membuat Revisi Bab 1</h4>
+						</div>
+						<div class="card-desc mb-4">
+							<span class="text-[14px] text-[#808080]">Deskripsi</span>
+							<p class="text-[14px] text-[#333333]">menambahkan pada bagian 4.2 dan 4.3 tambahnakan balbalbalbal....</p>
+						</div>
+						<div class="card-link mb-4">
+							<span class="text-[14px] text-[#808080]">Link</span>
+							<p class="text-[14px] text-[#333333]">-</p>
+						</div>
+						<div class="card-button grid lg:grid-cols-7 grid-cols-1 gap-2">
+							<a href="#" class="bg-[#00827A] text-center text-[#FFFFFF] py-3 px-4 rounded-md">Tandai Selesai</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="../dist/app.js"></script>
+	</body>
+</html>
